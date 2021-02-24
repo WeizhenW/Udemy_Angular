@@ -1,6 +1,10 @@
 <p>servers works!</p>
 <button
     class="btn btn-info"
-    [disabled] = "!allowNewServer">Add Server</button>
+    [disabled] = "!allowNewServer"
+    (click) = "onCreateServer()">Add Server</button>
+<p>Allow to add new server? {{allowNewServer}}</p>
+<p [innerText] = "allowNewServer"></p>
+<p class="serverCreationStatusClass">{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
