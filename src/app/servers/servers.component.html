@@ -27,3 +27,19 @@
 <p class="serverCreationStatusClass">{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
+
+<div class="assignment2 container">
+    <h3>Below is the second assignment - two way binding </h3>
+    <label>User Name</label>
+    <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="username">
+    <button
+        class="btn btn-primary"
+        [disabled]="username === ''"
+        (click)="username = ''"
+        >Reset Username</button>
+    <p>{{ username }}</p>
+</div>
+

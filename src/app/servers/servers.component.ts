@@ -9,6 +9,8 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;  
   serverCreationStatus = 'Server NOT created!';
   serverName = 'Demo of 2-way binding';
+  username = '';
+  buttonDisabled = true;
 
   constructor() { 
     setTimeout(()=>{
@@ -29,5 +31,16 @@ export class ServersComponent implements OnInit {
     // console.log(event);
     this.serverName = (<HTMLInputElement>event.target).value;
   }
+
+  // onInputUsername() {
+  //   if(this.username) {
+  //     this.buttonDisabled = false;
+  //   }
+  // }
+
+  onResetUsername() {
+    this.username = '';
+  }
+
 
 }

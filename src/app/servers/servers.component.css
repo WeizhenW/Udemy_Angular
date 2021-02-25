@@ -1,3 +1,10 @@
 .serverCreationStatusClass {
     background-color: blueviolet;
 }
+
+.assignment2 {
+    color: chocolate;
+    background-color: blanchedalmond;
+    padding: 10%;
+    border: brown 1pt solid;
+}
