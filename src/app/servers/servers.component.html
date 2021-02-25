@@ -24,7 +24,11 @@
 <!-- property binding -->
 <p [innerText] = "allowNewServer"></p>
 
-<p class="serverCreationStatusClass">{{serverCreationStatus}}</p>
+<p class="serverCreationStatusClass" *ngIf="serverCreated; else noServer">{{serverCreationStatus}}</p>
+    <ng-template #noServer>
+        <p>No Server has been created (generated with ngIf/else)</p>
+    </ng-template>
+
 <app-server></app-server>
 <app-server></app-server>
 

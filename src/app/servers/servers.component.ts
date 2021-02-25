@@ -11,6 +11,7 @@ export class ServersComponent implements OnInit {
   serverName = 'Demo of 2-way binding';
   username = '';
   buttonDisabled = true;
+  serverCreated = false;
 
   constructor() { 
     setTimeout(()=>{
@@ -23,6 +24,7 @@ export class ServersComponent implements OnInit {
 
   //event binding function
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus = 'Server IS successfully created! The server name is ' + this.serverName;
   }
 
