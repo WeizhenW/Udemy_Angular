@@ -29,8 +29,7 @@
         <p>No Server has been created (generated with ngIf/else)</p>
     </ng-template>
 <div class="appServerDiv">
-    <app-server></app-server>
-    <app-server></app-server>
+    <app-server *ngFor="let server of servers"></app-server>
 </div>
 
 
