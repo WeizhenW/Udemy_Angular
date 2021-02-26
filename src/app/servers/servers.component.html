@@ -48,3 +48,17 @@
     <p>{{ username }}</p>
 </div>
 
+<div class="assignment3 container">
+    <h3>Below is the third assignment</h3>
+    <button
+        class="btn btn-primary"
+        (click)="onToggleDisplay()">Display Details</button>
+    <p [hidden]="!displayDetails">It is Friday!!!</p>
+    <ul>
+        <li 
+            *ngFor="let click of buttonClicks"
+            [ngStyle]="{backgroundColor: click >= 5 ? 'blue' : 'transparent'}"
+            [ngClass]="{timeColor: click >= 5}">{{click}}</li>
+    </ul>
+</div>
+

@@ -9,9 +9,13 @@
     color: azure;
 } */
 
-.assignment2 {
+.assignment2, .assignment3 {
     color: chocolate;
     background-color: blanchedalmond;
     padding: 10%;
     border: brown 1pt solid;
+}
+
+.timeColor {
+    color: red;
 }

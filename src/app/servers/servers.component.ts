@@ -13,6 +13,8 @@ export class ServersComponent implements OnInit {
   buttonDisabled = true;
   serverCreated = false;
   servers = ['server 1', 'server 2'];
+  displayDetails = true;
+  buttonClicks = [];
 
   constructor() { 
     setTimeout(()=>{
@@ -46,5 +48,13 @@ export class ServersComponent implements OnInit {
     this.username = '';
   }
 
+  onToggleDisplay() {
+    this.displayDetails = !this.displayDetails;
+    // this.buttonClicks.push(Date().toString());
+    this.buttonClicks.push(this.buttonClicks.length + 1);
+  }
 
+  getTimeBackground() {
+    // return this.buttonClicksNumber >= 5 ? 'blue' : 'white';
+  }
 }
