@@ -2,7 +2,14 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles: [`
+        .serverOnline {
+            color: blue;
+            font-size: 20px;
+        }
+    `]
+    
     // template: `
     //     <p>The first server component</p>
     //     <p>The second server component</p>
