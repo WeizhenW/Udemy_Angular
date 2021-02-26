@@ -50,11 +50,8 @@ export class ServersComponent implements OnInit {
 
   onToggleDisplay() {
     this.displayDetails = !this.displayDetails;
-    // this.buttonClicks.push(Date().toString());
-    this.buttonClicks.push(this.buttonClicks.length + 1);
+    this.buttonClicks.push(new Date());
+    // this.buttonClicks.push(this.buttonClicks.length + 1);
   }
 
-  getTimeBackground() {
-    // return this.buttonClicksNumber >= 5 ? 'blue' : 'white';
-  }
 }
